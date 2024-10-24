@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import SupabaseProvider from "@/providers/SupabaseProvider";
+import UserProvider from "@/providers/UserProvider";
+import ModalProvider from "@/providers/ModalProvider";
 
 const font = Montserrat({ subsets: ["latin"] })
 
@@ -19,7 +22,12 @@ export default function RootLayout({
             <body
               className={font.className}
             >
-                {children}
+                <SupabaseProvider>
+                    <UserProvider>
+                        <ModalProvider/>
+                        {children}
+                    </UserProvider> 
+                </SupabaseProvider>
             </body>
         </html>
     );
