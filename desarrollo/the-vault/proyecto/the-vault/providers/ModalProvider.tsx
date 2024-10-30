@@ -17,7 +17,9 @@ const ModalProvider = () => {
     return (
         <>
             <LoginModal/>
-            {/*Otros modales*/}
+            <UploadModal/>
+            <UploadPlaylistModal/>
+            <UploadCSVModal/>
         </>
     )
 }
