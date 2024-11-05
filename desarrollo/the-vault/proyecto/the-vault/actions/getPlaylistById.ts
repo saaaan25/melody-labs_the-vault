@@ -6,7 +6,7 @@ const getPlaylistById = async (id: number) => {
         cookies: cookies
     });
 
-    const { data, error } = await supabase.from('playlists').select('*, songs(*)').eq('id', id).single();
+    const { data, error } = await supabase.from('playlist').select('*, songs(*)').eq('id', id).single();
 
     if (error) {
         console.log(error.message);

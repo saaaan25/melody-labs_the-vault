@@ -27,7 +27,7 @@ const User = async () => {
             <RecentContent songs={recent} playlists={userPlaylists} />
           </div>
           <div className="bg-custom-color-3 rounded-lg px-6 pt-4 pb-2">
-            <h2 className="text-2xl font-bold mb-4">Canciones favoritas</h2>
+            <h2 className="text-2xl font-bold mb-2">Canciones favoritas</h2>
             <LikedContent songs={songs} playlists={userPlaylists}/>
           </div>
         </div>

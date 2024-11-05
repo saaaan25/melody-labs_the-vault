@@ -21,6 +21,7 @@ const PlaylistItem:React.FC<PlaylistItemProps> = ({data}) => {
 
     return (
         <button className="
+                w-[200px]
                 relative
                 group
                 flex

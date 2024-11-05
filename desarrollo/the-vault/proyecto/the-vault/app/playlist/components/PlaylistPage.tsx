@@ -42,7 +42,7 @@ const PlaylistPage: React.FC<PlaylistPageProps> = ({id}) => {
         const fetchPlaylist = async () => {
             try {
                 const { data: playlist, error } = await supabaseClient
-                    .from('playlists')
+                    .from('playlist')
                     .select('*')
                     .eq('id', id)
                     .single();
