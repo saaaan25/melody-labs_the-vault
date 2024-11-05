@@ -17,7 +17,7 @@ const useGetPlaylistsByUserId = (userId?: string) => {
 
         const fetchPlaylists = async () => {
             const { data, error } = await supabaseClient
-                .from('playlists')
+                .from('playlist')
                 .select('*')
                 .eq('user_id', userId)
 

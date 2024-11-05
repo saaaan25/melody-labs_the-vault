@@ -28,7 +28,7 @@ const PlaylistChoice: React.FC<PlaylistChoiceProps> = ({playlists = [], song1}) 
         }
 
         const fetchExistence = async (playlistId: number) => {
-            const { data: playlistData, error } = await supabaseClient.from('playlists').select('*')
+            const { data: playlistData, error } = await supabaseClient.from('playlist').select('*')
                 .eq('user_id', user.id).eq('id', playlistId).single()
 
             if (!error && playlistData) {
@@ -53,7 +53,7 @@ const PlaylistChoice: React.FC<PlaylistChoiceProps> = ({playlists = [], song1}) 
 
         if (existsInPlaylist) {
             const updatedSongs = selectedPlaylist.songs.filter(song => song !== actualSong)
-            const { error } = await supabaseClient.from('playlists')
+            const { error } = await supabaseClient.from('playlist')
                 .update({ songs: updatedSongs })
                 .eq('id', playlistId)
 
@@ -66,7 +66,7 @@ const PlaylistChoice: React.FC<PlaylistChoiceProps> = ({playlists = [], song1}) 
             }
         } else {
             const updatedSongs = [...(selectedPlaylist.songs || []), actualSong]
-            const { error } = await supabaseClient.from('playlists')
+            const { error } = await supabaseClient.from('playlist')
                 .update({ songs: updatedSongs })
                 .eq('id', playlistId)
 
