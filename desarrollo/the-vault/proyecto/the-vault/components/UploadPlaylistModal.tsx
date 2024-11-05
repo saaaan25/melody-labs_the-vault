@@ -65,7 +65,7 @@ const UploadPlaylistModal = () => {
 
             const {
                 error: supabaseError
-            } = await supabaseClient.from('playlists').insert({
+            } = await supabaseClient.from('playlist').insert({
                 user_id: user.id,
                 name: values.name,
                 image_path: imageData.path
