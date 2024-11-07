@@ -13,3 +13,4 @@ const useUpload = create<UploadStore>((set) => ({
 }))
 
 export default useUpload
+
