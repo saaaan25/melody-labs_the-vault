@@ -15,7 +15,6 @@ const AuthModal:React.FC<AuthModalProps> = ({
     isOpen,
     onChange,
     title,
-    description,
     children
 }) => {
     return (
