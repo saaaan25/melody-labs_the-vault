@@ -6,12 +6,6 @@ interface UploadStore {
     onClose: () => void
 }
 
-interface UploadStore {
-    isOpen: boolean
-    onOpen: () => void
-    onClose: () => void
-}
-
 const useUpload = create<UploadStore>((set) => ({
     isOpen: false,
     onOpen: () => set({ isOpen: true }),
