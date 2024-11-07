@@ -7,6 +7,12 @@ import getPlaylistsByUserId from "@/actions/getPlaylistsByUserId"
 import getSongsByUserId from "@/actions/getSongsByUserId"
 import PlaylistContent from "@/app/playlist/components/PlaylistContent"
 import ProfileSection from "@/components/ProfileSection";
+//hola//hola//hola//hola
+//hola
+//hola
+//hola
+//hola
+//hola
 
 const User = async () => {
   const userSongs = await getSongsByUserId()
