@@ -12,4 +12,11 @@ const useUpload = create<UploadStore>((set) => ({
     onClose: () => set({ isOpen: false}),
 }))
 
+const useUpload = create<UploadStore>((set) => ({
+    isOpen: false,
+    onOpen: () => set({ isOpen: true }),
+    onClose: () => set({ isOpen: false}),
+}))
+
 export default useUpload
+
