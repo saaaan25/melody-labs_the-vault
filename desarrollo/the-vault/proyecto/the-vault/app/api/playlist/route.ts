@@ -5,3 +5,18 @@ export async function GET() {
   const playlists = await getPlaylistsByUserId();
   return NextResponse.json(playlists);
 }
+//hola
+//hola
+//hola
+//hola
+//hola
+//hola
+//hola
+//hola//hola
+//hola
+//hola
+//hola
+//hola
+//hola
+//hola
+//hola
