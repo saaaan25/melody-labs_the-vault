@@ -114,7 +114,7 @@ const AuthModal:React.FC<AuthModalProps> = ({
         </Dialog.Root>
     )
 }
- 
+
 export default AuthModal
 //hola
 //hola
@@ -131,3 +131,4 @@ export default AuthModal
 //hola
 //hola
 //hola
+
