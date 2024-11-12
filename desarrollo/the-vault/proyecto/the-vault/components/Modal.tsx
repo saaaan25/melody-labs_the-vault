@@ -95,7 +95,7 @@ const Modal:React.FC<ModalProps> = ({
         </Dialog.Root>
     )
 }
- 
+
 export default Modal
 //hola
 //hola
