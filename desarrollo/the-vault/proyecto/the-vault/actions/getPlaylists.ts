@@ -7,7 +7,7 @@ const getPlaylists = async (): Promise<Playlist[]> => {
         cookies: cookies
     })
 
-    const { data, error } = await supabase.from('playlists').select('*')
+    const { data, error } = await supabase.from('playlist').select('*')
     .order('created_at', {ascending: false})
 
     if (error) {

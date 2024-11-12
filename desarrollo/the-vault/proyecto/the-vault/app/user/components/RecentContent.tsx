@@ -21,7 +21,7 @@ const RecentContent: React.FC<RecentContentProps> = ({ songs, playlists }) => {
 
     if(songs.length === 0) {
         return(
-            <div className="text-center text-xl font-bold">
+            <div className="text-center text-xl text-gray-800 pb-3">
                 No tienes canciones recientes
             </div>
         )
