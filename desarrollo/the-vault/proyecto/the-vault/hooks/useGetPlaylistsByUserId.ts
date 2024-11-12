@@ -7,6 +7,10 @@ const useGetPlaylistsByUserId = (userId?: string) => {
     const [isLoadingPlaylists, setIsLoadingPlaylists] = useState(false)
     const [playlists, setPlaylists] = useState<Playlist[]>([])
     const { supabaseClient } = useSessionContext()
+//hola
+//hola
+//hola
+//hola
 
     useEffect(() => {
         if (!userId) {
@@ -17,7 +21,7 @@ const useGetPlaylistsByUserId = (userId?: string) => {
 
         const fetchPlaylists = async () => {
             const { data, error } = await supabaseClient
-                .from('playlists')
+                .from('playlist')
                 .select('*')
                 .eq('user_id', userId)
 

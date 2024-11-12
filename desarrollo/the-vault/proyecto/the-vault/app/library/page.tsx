@@ -1,6 +1,15 @@
+import getPlaylistsByUserId from "@/actions/getPlaylistsByUserId"
 import Header from "@/components/Header"
+import LibraryContent from "@/app/library/components/LibraryContent"
+import UploadPlaylistModal from "@/components/UploadPlaylistModal"
+import SearchPlaylist from "@/components/SearchPlaylist"
+import AddPlaylistButton from "@/components/AddPlaylistButton"
 
-export default function Library() {
+export const revalidate = 0
+
+export default async function Library() {
+    const userPlaylists = await getPlaylistsByUserId()
+
     return (
         <div className=" 
             bg-custom-color-2 
@@ -28,9 +37,17 @@ export default function Library() {
                         mb-3
                         ">
                         Tu biblioteca
-                    </h1>            
+                    </h1>
+                    <div className="flex justify-end items-center gap-3">
+                        <SearchPlaylist playlists={userPlaylists}/>
+                        <AddPlaylistButton/>
+                    </div>
                 </div>
-            </div>    
+                <div className="flex mt-6">
+                    <LibraryContent playlists={userPlaylists}/>
+                </div>
+            </div>
+            <UploadPlaylistModal/>
         </div>
     )
 }
