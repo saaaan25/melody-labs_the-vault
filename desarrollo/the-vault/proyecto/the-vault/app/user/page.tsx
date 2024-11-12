@@ -7,13 +7,19 @@ import getPlaylistsByUserId from "@/actions/getPlaylistsByUserId"
 import getSongsByUserId from "@/actions/getSongsByUserId"
 import PlaylistContent from "@/app/playlist/components/PlaylistContent"
 import ProfileSection from "@/components/ProfileSection";
+//hola//hola//hola//hola
+//hola
+//hola
+//hola
+//hola
+//hola
 
 const User = async () => {
   const userSongs = await getSongsByUserId()
   const userPlaylists = await getPlaylistsByUserId()
   const songs = await getLikedSongs();
   const recent = await getRecentSongs();
-
+// Hola
   return (
     <div className="bg-custom-color-2 text-black h-full w-full overflow-hidden overflow-y-auto">
       <Header><></></Header >
