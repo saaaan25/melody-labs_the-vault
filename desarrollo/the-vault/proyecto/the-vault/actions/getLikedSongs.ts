@@ -19,7 +19,6 @@ const getLikedSongs = async (): Promise<Song[]> => {
     .eq('user_id', session?.user?.id)
     .order('created_at', {ascending: false});
 
-    console.log(data)
     if (error) {
         console.log(error)
         return []
