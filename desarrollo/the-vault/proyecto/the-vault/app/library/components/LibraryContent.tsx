@@ -34,7 +34,6 @@ const LibraryContent: React.FC<LibraryContentProps> = ({ playlists }) => {
                 data={item}
                 />
             ))}
-            <AddPlaylistButton/>
         </div>
     )
 }
