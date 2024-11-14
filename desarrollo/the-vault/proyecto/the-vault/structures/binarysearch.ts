@@ -19,3 +19,5 @@ export function busquedaBinaria(arr: Playlist[], palabra: string): number | null
 
     return null; 
 }
+
+// binarysearch
