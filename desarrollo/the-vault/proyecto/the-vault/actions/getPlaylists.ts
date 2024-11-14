@@ -10,7 +10,6 @@ const getPlaylists = async (): Promise<Playlist[]> => {
     const { data, error } = await supabase.from('playlists').select('*')
     .order('created_at', {ascending: false})
 
-    console.log(data)
     if (error) {
         console.log(error)
     }
