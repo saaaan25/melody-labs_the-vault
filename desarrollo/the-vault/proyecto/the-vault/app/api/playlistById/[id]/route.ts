@@ -9,7 +9,14 @@ export async function GET(request: Request) {
     if (!id) {
         return NextResponse.json({ error: "Playlist ID is required" }, { status: 400 });
     }
-
+//hola
+//hola
+//hola
+//hola
+//hola
+//hola
+//hola
+//hola  
     const playlistId = Number(id)
 
     const playlist = await getPlaylistById(playlistId);

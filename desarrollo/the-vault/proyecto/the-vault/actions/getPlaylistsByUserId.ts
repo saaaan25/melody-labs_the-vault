@@ -14,7 +14,7 @@ const getPlaylistsByUserId = async (): Promise<Playlist[]> => {
         return []
     }
 
-    const { data, error } = await supabase.from('playlists').select('*')
+    const { data, error } = await supabase.from('playlist').select('*')
     .eq('user_id', sessionData.session?.user.id).order('created_at', { ascending: false })
 
     if (error) {

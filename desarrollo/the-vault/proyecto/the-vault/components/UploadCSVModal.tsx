@@ -140,4 +140,5 @@ const UploadCSVModal = () => {
     );
 };
 
-export default UploadCSVModal; 
+export default UploadCSVModal;
+
