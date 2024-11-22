@@ -39,7 +39,7 @@ const getRecentSongs = async (): Promise<Song[]> => {
         .select('*, songs(*)')
         .eq('user_id', session?.user?.id)
         .order('timestamp', { ascending: false });
-
+    console.log(data);
     if (error) {
         console.log("Error fetching user activity:", error);
         return [];
@@ -74,3 +74,5 @@ const getRecentSongs = async (): Promise<Song[]> => {
 };
 
 export default getRecentSongs;
+
+//hola
