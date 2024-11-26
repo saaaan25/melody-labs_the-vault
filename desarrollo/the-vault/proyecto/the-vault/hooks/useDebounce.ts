@@ -18,6 +18,5 @@ function useDebounce<T>(value: T, delay?: number): T {
    return debouncedValue;
 };
 
-busquedaBinaria
-basename
+busquedaBinaria crossOriginIsolated
 export default useDebounce;
