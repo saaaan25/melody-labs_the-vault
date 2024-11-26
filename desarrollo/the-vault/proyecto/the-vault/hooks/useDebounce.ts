@@ -1,3 +1,5 @@
+import { busquedaBinaria } from "@/structures/binarysearch";
+import { basename } from "path";
 import { useEffect, useState } from "react";
 
 function useDebounce<T>(value: T, delay?: number): T {
@@ -15,4 +17,7 @@ function useDebounce<T>(value: T, delay?: number): T {
 
    return debouncedValue;
 };
+
+busquedaBinaria
+basename
 export default useDebounce;
