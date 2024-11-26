@@ -14,14 +14,4 @@ const useCSVUpload = create<CSVUploadStore>((set) => ({
     onClose: () => set({ isOpen: false }),
 }));
 
-//adicional 
-
-///adicional
-
-//adicionando
-
-addAbortListener
-
-addAbortListener
-addAbortListener
 export default useCSVUpload;
