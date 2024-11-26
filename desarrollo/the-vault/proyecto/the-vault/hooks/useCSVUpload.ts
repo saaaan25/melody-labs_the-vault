@@ -1,3 +1,5 @@
+import { addAbortListener } from "events";
+import { availableParallelism } from "os";
 import { create } from "zustand";
 
 interface CSVUploadStore {
@@ -17,4 +19,9 @@ const useCSVUpload = create<CSVUploadStore>((set) => ({
 ///adicional
 
 //adicionando
+
+addAbortListener
+
+addAbortListener
+addAbortListener
 export default useCSVUpload;
