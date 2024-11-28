@@ -17,7 +17,4 @@ function useDebounce<T>(value: T, delay?: number): T {
 
    return debouncedValue;
 };
-caches
-abstract
-events
 export default useDebounce;
