@@ -1,7 +1,7 @@
 import React from 'react';
 import useColorPalette from '../hooks/useColorPalette';
 import { useUser } from "@/hooks/useUser";
-import Modal from '../components/Modal';
+import Modal from './Modal';
 
 interface ThemeModalProps {
   isOpen: boolean;
